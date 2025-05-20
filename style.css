@@ -1,142 +1,139 @@
 /* Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-  }
-  
-  header {
-    background: #1b4332;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .navbar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .navbar .nav-links a:hover {
-    color: #95d5b2;
-  }
-  
-  /* Hero */
-  .hero {
-    background: linear-gradient(to bottom right, #2d6a4f, #40916c);
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .cta-button {
-    padding: 0.75rem 2rem;
-    background-color: #95d5b2;
-    color: #1b4332;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #74c69d;
-  }
-  
-  /* Sections */
-  .section {
-    padding: 80px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .section.dark {
-    background-color: #d8f3dc;
-  }
-  
-  /* Footer */
-  footer {
-    background: #1b4332;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  /* Animations */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1.5s forwards;
-  }
-  
-  .fade-in-up {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s forwards;
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
 
+header {
+  background: #1b4332;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
 
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-  .team-grid {
+.navbar .nav-links a:hover {
+  color: #95d5b2;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to bottom right, #2d6a4f, #40916c);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  background-color: #95d5b2;
+  color: #1b4332;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #74c69d;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.section.dark {
+  background-color: #d8f3dc;
+}
+
+/* Footer */
+footer {
+  background: #1b4332;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in-up.animate {
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Team Section */
+.team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -147,7 +144,7 @@
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
 
@@ -155,10 +152,7 @@
   transform: translateY(-5px);
 }
 
-
-
-
-
+/* Custom List */
 .custom-list {
   text-align: left;
   max-width: 800px;
@@ -181,13 +175,7 @@
   font-weight: bold;
 }
 
-
-
-
-
-
-
-
+/* SWOT Grid */
 .swot-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -216,4 +204,52 @@
 
 .swot-card:hover {
   transform: translateY(-4px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+
+.hero{
+  background-image: url("/images/2h-media-1SDw4biQ6us-unsplash.jpg")
+}
+.About{
+  background-image: url("/images/rick-proctor-PGc9Vid8O24-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
 }
