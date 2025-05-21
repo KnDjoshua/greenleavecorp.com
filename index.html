@@ -25,7 +25,11 @@
     }
 
     .section {
+      min-height: 100vh;
       padding: 4rem 0;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0 0 40px rgba(0, 255, 100, 0.1);
     }
 
     .dark {
@@ -43,6 +47,7 @@
       padding: 1rem 2rem;
       border-radius: 6px;
       font-size: 1.2rem;
+      box-shadow: 0 5px 20px rgba(40, 167, 69, 0.5);
     }
 
     footer {
@@ -50,6 +55,11 @@
       padding: 2rem;
       text-align: center;
       color: #aaa;
+    }
+
+    .icon {
+      color: #28a745;
+      margin-right: 0.5rem;
     }
   </style>
 </head>
@@ -81,7 +91,7 @@
   <!-- Hero Section -->
   <section class="section text-center bg-black">
     <div class="container">
-      <h1 class="display-5 fw-bold">Pioneering Medicinal Liquid Cannabis in Africa</h1>
+      <h1 class="display-5 fw-bold"><i class="fas fa-leaf icon"></i>Pioneering Medicinal Liquid Cannabis in Africa</h1>
       <p class="lead mt-3">Revolutionizing cannabis cultivation with scale, precision, and vision.</p>
     </div>
   </section>
@@ -89,7 +99,7 @@
   <!-- Executive Summary -->
   <section id="executive" class="section">
     <div class="container text-center">
-      <h2>Executive Summary</h2>
+      <h2><i class="fas fa-briefcase icon"></i>Executive Summary</h2>
       <p>Green Leaf Corporation aims to become the world’s leading manufacturer of liquid cannabis, pioneering large-scale commercialization of liquid THC-Isolate.</p>
     </div>
   </section>
@@ -97,7 +107,7 @@
   <!-- Opportunity & Solution -->
   <section id="opportunity" class="section dark">
     <div class="container">
-      <h2 class="text-center mb-4">Opportunity & Solution</h2>
+      <h2 class="text-center mb-4"><i class="fas fa-lightbulb icon"></i>Opportunity & Solution</h2>
       <p>Africa’s untapped manufacturing potential offers ideal conditions for cannabis cultivation. Uganda, Rwanda, and Morocco provide climate, land, and support for expansion and export. Our solution includes scalable, high-quality THC extraction, innovative farming, and strategic partnerships.</p>
     </div>
   </section>
@@ -105,7 +115,7 @@
   <!-- Market Analysis -->
   <section id="market" class="section">
     <div class="container">
-      <h2 class="text-center mb-4">Market Analysis</h2>
+      <h2 class="text-center mb-4"><i class="fas fa-chart-line icon"></i>Market Analysis</h2>
       <p>The global cannabis market is projected to reach $84.73B by 2025, driven by medical cannabis demand. Europe leads in consumption with a growing need for THC isolates and full-spectrum oils, favoring sustainable cultivation methods.</p>
     </div>
   </section>
@@ -113,7 +123,7 @@
   <!-- Business Model -->
   <section id="business" class="section dark">
     <div class="container">
-      <h2 class="text-center mb-4">Business Model</h2>
+      <h2 class="text-center mb-4"><i class="fas fa-diagram-project icon"></i>Business Model</h2>
       <p>Revenue from THC isolate, CBD oils, and crude oil. Uganda offers pricing advantages through low cost. Future products include capsules and edibles. Direct sales, distributors, expos, and digital marketing drive revenue.</p>
     </div>
   </section>
@@ -121,7 +131,7 @@
   <!-- Operational Blueprint -->
   <section id="operations" class="section">
     <div class="container">
-      <h2 class="text-center mb-4">Operational Blueprint</h2>
+      <h2 class="text-center mb-4"><i class="fas fa-industry icon"></i>Operational Blueprint</h2>
       <p>Facility in Uganda designed for scalability, powered by sunlight and efficient processes. Affordable land, compliance with medical standards, and massive production potential ensure competitive quality.</p>
     </div>
   </section>
@@ -129,12 +139,12 @@
   <!-- SWOT Analysis -->
   <section id="swot" class="section dark">
     <div class="container">
-      <h2 class="text-center mb-4">SWOT Analysis</h2>
-      <div class="row">
-        <div class="col-md-3"><strong>Strengths:</strong><br />Vast land, partnerships, low cost, expert team</div>
-        <div class="col-md-3"><strong>Weaknesses:</strong><br />Regulatory issues, high capital, logistics</div>
-        <div class="col-md-3"><strong>Opportunities:</strong><br />Global market growth, new products</div>
-        <div class="col-md-3"><strong>Threats:</strong><br />Competition, black market, crop risks</div>
+      <h2 class="text-center mb-4"><i class="fas fa-table icon"></i>SWOT Analysis</h2>
+      <div class="row text-center">
+        <div class="col-md-3"><strong>S</strong><br />Vast land, partnerships, low cost, expert team</div>
+        <div class="col-md-3"><strong>W</strong><br />Regulatory issues, high capital, logistics</div>
+        <div class="col-md-3"><strong>O</strong><br />Global market growth, new products</div>
+        <div class="col-md-3"><strong>T</strong><br />Competition, black market, crop risks</div>
       </div>
     </div>
   </section>
@@ -142,7 +152,7 @@
   <!-- Strategic Partnership -->
   <section id="partnership" class="section">
     <div class="container">
-      <h2 class="text-center mb-4">Strategic Partnership</h2>
+      <h2 class="text-center mb-4"><i class="fas fa-handshake icon"></i>Strategic Partnership</h2>
       <p>3C Consulting partners exclusively with Green Leaf in Africa, bringing global expertise to optimize compliance, sustainability, and operations. Over 500 clients in 34 US states and 16 countries trust 3C’s tailored cannabis consulting.</p>
     </div>
   </section>
@@ -150,7 +160,7 @@
   <!-- Leadership Team -->
   <section id="team" class="section dark">
     <div class="container">
-      <h2 class="text-center mb-4">Leadership Team</h2>
+      <h2 class="text-center mb-4"><i class="fas fa-users icon"></i>Leadership Team</h2>
       <ul>
         <li>CEO: Global cannabis advisor with 15+ years’ experience</li>
         <li>Strategy Head: 10+ years in regulated African industries</li>
@@ -164,7 +174,7 @@
   <!-- Financial Overview -->
   <section id="financial" class="section">
     <div class="container text-center">
-      <h2>Financial Overview</h2>
+      <h2><i class="fas fa-coins icon"></i>Financial Overview</h2>
       <p>Raising $4.9M for 60% equity. Facility setup, equipment, and scalability projected to deliver strong growth 2024–2029. $20M LOI validates demand. Uganda’s cost advantage and Europe’s demand position Green Leaf for dominance.</p>
       <a href="mailto:invest@greenleaf.africa" class="cta mt-3 d-inline-block">Invest Now</a>
     </div>
