@@ -5,70 +5,169 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Green Leaf Corporation</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #28a745 !important;
+    }
+
+    .section {
+      padding: 4rem 0;
+    }
+
+    .dark {
+      background-color: #1c1c1c;
+    }
+
+    .section h2 {
+      color: #28a745;
+    }
+
+    .cta {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 2rem;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Green Leaf</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="market.html">Market</a></li>
-        <li><a href="model.html">Model</a></li>
-        <li><a href="operations.html">Operations</a></li>
-        <li><a href="investor.html">Investors</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">Green Leaf</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#executive">Executive</a></li>
+          <li class="nav-item"><a class="nav-link" href="#opportunity">Opportunity</a></li>
+          <li class="nav-item"><a class="nav-link" href="#market">Market</a></li>
+          <li class="nav-item"><a class="nav-link" href="#business">Business Model</a></li>
+          <li class="nav-item"><a class="nav-link" href="#operations">Operations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#swot">SWOT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#partnership">Partnership</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#financial">Financial</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content fade-in">
-      <h2>Pioneering Medicinal Liquid Cannabis in Africa</h2>
-      <p>Revolutionizing cannabis cultivation with scale, precision, and vision.</p>
-      <a href="#summary" class="cta-button">Explore More</a>
+  <section class="section text-center bg-black">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Pioneering Medicinal Liquid Cannabis in Africa</h1>
+      <p class="lead mt-3">Revolutionizing cannabis cultivation with scale, precision, and vision.</p>
     </div>
-    <!-- Hero Image -->
   </section>
 
   <!-- Executive Summary -->
-  <section id="summary" class="section fade-in-up">
-    <h2>Executive Summary</h2>
-    <p>
-      Green Leaf Corporation aims to become the world’s leading manufacturer of liquid cannabis, pioneering large-scale
-      commercialization of liquid THC-Isolate.
-    </p>
+  <section id="executive" class="section">
+    <div class="container text-center">
+      <h2>Executive Summary</h2>
+      <p>Green Leaf Corporation aims to become the world’s leading manufacturer of liquid cannabis, pioneering large-scale commercialization of liquid THC-Isolate.</p>
+    </div>
   </section>
 
-  <!-- Mission -->
-  <section id="mission" class="section fade-in-up dark">
-    <h2>Our Mission</h2>
-    <p>
-      We are committed to transforming the cannabis industry through scalable, innovative farming, strategic
-      partnerships, and sustainable practices.
-    </p>
+  <!-- Opportunity & Solution -->
+  <section id="opportunity" class="section dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Opportunity & Solution</h2>
+      <p>Africa’s untapped manufacturing potential offers ideal conditions for cannabis cultivation. Uganda, Rwanda, and Morocco provide climate, land, and support for expansion and export. Our solution includes scalable, high-quality THC extraction, innovative farming, and strategic partnerships.</p>
+    </div>
   </section>
 
-  <!-- Opportunity -->
-  <section id="opportunity" class="section fade-in-up">
-    <h2>Opportunity</h2>
-    <p>
-      Africa’s untapped potential—particularly in Uganda, Rwanda, and Morocco—offers the perfect climate, affordable
-      land, and regulatory support for cannabis production.
-    </p>
+  <!-- Market Analysis -->
+  <section id="market" class="section">
+    <div class="container">
+      <h2 class="text-center mb-4">Market Analysis</h2>
+      <p>The global cannabis market is projected to reach $84.73B by 2025, driven by medical cannabis demand. Europe leads in consumption with a growing need for THC isolates and full-spectrum oils, favoring sustainable cultivation methods.</p>
+    </div>
   </section>
 
-  <!-- Solution -->
-  <section id="solution" class="section fade-in-up dark">
-    <h2>Our Solution</h2>
-    <p>
-      High-quality, scalable cannabis products focused on liquid THC extraction, leveraging innovative cultivation
-      techniques, and strong government partnerships.
-    </p>
+  <!-- Business Model -->
+  <section id="business" class="section dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Business Model</h2>
+      <p>Revenue from THC isolate, CBD oils, and crude oil. Uganda offers pricing advantages through low cost. Future products include capsules and edibles. Direct sales, distributors, expos, and digital marketing drive revenue.</p>
+    </div>
+  </section>
+
+  <!-- Operational Blueprint -->
+  <section id="operations" class="section">
+    <div class="container">
+      <h2 class="text-center mb-4">Operational Blueprint</h2>
+      <p>Facility in Uganda designed for scalability, powered by sunlight and efficient processes. Affordable land, compliance with medical standards, and massive production potential ensure competitive quality.</p>
+    </div>
+  </section>
+
+  <!-- SWOT Analysis -->
+  <section id="swot" class="section dark">
+    <div class="container">
+      <h2 class="text-center mb-4">SWOT Analysis</h2>
+      <div class="row">
+        <div class="col-md-3"><strong>Strengths:</strong><br />Vast land, partnerships, low cost, expert team</div>
+        <div class="col-md-3"><strong>Weaknesses:</strong><br />Regulatory issues, high capital, logistics</div>
+        <div class="col-md-3"><strong>Opportunities:</strong><br />Global market growth, new products</div>
+        <div class="col-md-3"><strong>Threats:</strong><br />Competition, black market, crop risks</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Partnership -->
+  <section id="partnership" class="section">
+    <div class="container">
+      <h2 class="text-center mb-4">Strategic Partnership</h2>
+      <p>3C Consulting partners exclusively with Green Leaf in Africa, bringing global expertise to optimize compliance, sustainability, and operations. Over 500 clients in 34 US states and 16 countries trust 3C’s tailored cannabis consulting.</p>
+    </div>
+  </section>
+
+  <!-- Leadership Team -->
+  <section id="team" class="section dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Leadership Team</h2>
+      <ul>
+        <li>CEO: Global cannabis advisor with 15+ years’ experience</li>
+        <li>Strategy Head: 10+ years in regulated African industries</li>
+        <li>Cultivation Lead: 20+ years in premium cannabis farming</li>
+        <li>Agricultural Scientist: PhD in cannabis genetics and sustainability</li>
+        <li>Government Liaison: Uganda Interior Minister for compliance</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Financial Overview -->
+  <section id="financial" class="section">
+    <div class="container text-center">
+      <h2>Financial Overview</h2>
+      <p>Raising $4.9M for 60% equity. Facility setup, equipment, and scalability projected to deliver strong growth 2024–2029. $20M LOI validates demand. Uganda’s cost advantage and Europe’s demand position Green Leaf for dominance.</p>
+      <a href="mailto:invest@greenleaf.africa" class="cta mt-3 d-inline-block">Invest Now</a>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -76,7 +175,7 @@
     <p>&copy; 2025 Green Leaf Corporation. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
