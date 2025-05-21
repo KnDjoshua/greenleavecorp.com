@@ -5,80 +5,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Investor Page – Green Leaf Corporation</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="About">
+<body class="About bg-dark text-white">
 
     <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Green Leaf</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="market.html">Market</a></li>
-                <li><a href="model.html">Model</a></li>
-                <li><a href="operations.html">Operations</a></li>
-                <li><a href="investor.html">Investors</a></li>
-            </ul>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+            <a class="navbar-brand logo" href="#">Green Leaf</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav nav-links">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="market.html">Market</a></li>
+                    <li class="nav-item"><a class="nav-link" href="model.html">Model</a></li>
+                    <li class="nav-item"><a class="nav-link" href="operations.html">Operations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="investor.html">Investors</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Financial Overview -->
-    <section style="color: aliceblue;" class="section fade-in-up">
-        <h2>Financial Overview</h2>
-        <p>
-            Green Leaf Corporation is poised to lead Africa’s medicinal cannabis export market. With efficient
-            production and strong international demand, our strategy ensures profitability and sustainable growth from
-            2024 onward.
-        </p>
+    <section class="section fade-in-up py-5">
+        <div class="container text-center">
+            <h2 class="mb-3">Financial Overview</h2>
+            <p>
+                Green Leaf Corporation is poised to lead Africa’s medicinal cannabis export market. With efficient
+                production
+                and strong international demand, our strategy ensures profitability and sustainable growth from 2024
+                onward.
+            </p>
+        </div>
     </section>
 
     <!-- Growth Drivers -->
-    <section class="section fade-in-up dark">
-        <h2>Why Invest in Green Leaf?</h2>
-        <ul class="custom-list">
-            <li><strong>Explosive Global Market:</strong> Cannabis industry projected to reach <strong>$84.7
-                    billion</strong> by 2027.</li>
-            <li><strong>Lowest Cost Base:</strong> Uganda offers unmatched production efficiency and yield scalability.
-            </li>
-            <li><strong>Strong Market Validation:</strong> $20M Letter of Intent for THC isolate sales proves demand and
-                product-market fit.</li>
-            <li><strong>First-Mover Advantage:</strong> Early market leadership in Africa’s cannabis sector.</li>
-        </ul>
+    <section class="section fade-in-up dark py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Invest in Green Leaf?</h2>
+            <ul class="custom-list fs-5">
+                <li><strong>Explosive Global Market:</strong> Cannabis industry projected to reach <strong>$84.7
+                        billion</strong> by 2027.</li>
+                <li><strong>Lowest Cost Base:</strong> Uganda offers unmatched production efficiency and yield
+                    scalability.</li>
+                <li><strong>Strong Market Validation:</strong> $20M Letter of Intent for THC isolate sales proves demand
+                    and product-market fit.</li>
+                <li><strong>First-Mover Advantage:</strong> Early market leadership in Africa’s cannabis sector.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Investment Opportunity -->
-    <section style="color: aliceblue;" class="section fade-in-up">
-        <h2>Investment Opportunity</h2>
-        <p>
-            We are currently raising <strong>$4.9 million</strong> in exchange for a <strong>60% equity stake</strong>
-            to fund facility setup, equipment procurement, and operational scale-up. This investment unlocks direct
-            access to the global cannabis supply chain through Africa.
-        </p>
-        <p style="margin-top: 1rem;">
-            Our financial roadmap forecasts consistent growth from 2024 to 2029, with rapid scaling fueled by exports to
-            Europe and expanding African operations.
-        </p>
+    <section class="section fade-in-up py-5">
+        <div class="container text-center">
+            <h2 class="mb-3">Investment Opportunity</h2>
+            <p>
+                We are currently raising <strong>$4.9 million</strong> in exchange for a <strong>60% equity
+                    stake</strong>
+                to fund facility setup, equipment procurement, and operational scale-up. This investment unlocks direct
+                access to the global cannabis supply chain through Africa.
+            </p>
+            <p class="mt-4">
+                Our financial roadmap forecasts consistent growth from 2024 to 2029, with rapid scaling fueled by
+                exports to
+                Europe and expanding African operations.
+            </p>
+        </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="section fade-in-up dark">
-        <h2>The Time Is Now</h2>
-        <p>
-            Be part of a movement redefining cannabis manufacturing in Africa. With premium product pipelines,
-            sustainable practices, and experienced leadership, Green Leaf Corporation is your opportunity to invest in
-            the future of global cannabis.
-        </p>
-        <a href="mailto:invest@greenleaf.africa" class="cta-button" style="margin-top: 2rem;">Contact Us to Invest</a>
+    <section class="section fade-in-up dark py-5 bg-black text-white text-center">
+        <div class="container">
+            <h2 class="mb-3">The Time Is Now</h2>
+            <p>
+                Be part of a movement redefining cannabis manufacturing in Africa. With premium product pipelines,
+                sustainable practices, and experienced leadership, Green Leaf Corporation is your opportunity to invest
+                in
+                the future of global cannabis.
+            </p>
+            <a href="mailto:invest@greenleaf.africa" class="btn cta-button mt-4">Contact Us to Invest</a>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Green Leaf Corporation. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Green Leaf Corporation. All rights reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 
